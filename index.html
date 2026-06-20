@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>霓虹彈力球實驗室</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <!-- 左上角數據面板 -->
+  <div id="stats-panel">
+    <div class="stat-item">
+      <span class="stat-label">小球數量</span>
+      <span class="stat-value" id="ball-count">0</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">FPS</span>
+      <span class="stat-value" id="fps-display">0</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">碰撞次數</span>
+      <span class="stat-value" id="collision-count">0</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">鼠標座標</span>
+      <span class="stat-value" id="mouse-pos">(0, 0)</span>
+    </div>
+  </div>
+
+  <!-- 右下角控制面板 -->
+  <div id="controls-panel">
+    <button id="btn-pause" class="ctrl-btn">暫停</button>
+    <button id="btn-reset" class="ctrl-btn">重置</button>
+    <button id="btn-explode" class="ctrl-btn explode">💥 爆炸</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
